@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 235" width="400" height="235" role="img" aria-label="Flask, pilot vessel and plant tank showing a validated scale-up">
+  <!-- Original illustration for the Featured Projects cards. Free to use. -->
+  <defs>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#b45309" opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="235" fill="#fffbeb"/>
+  <rect width="400" height="235" fill="url(#dots)"/>
+  <circle cx="345" cy="30" r="95" fill="#fbbf24" opacity="0.14"/>
+  <circle cx="40" cy="225" r="70" fill="#fbbf24" opacity="0.12"/>
+<path d="M66 120 H86 V140 L102 176 Q104 184 96 184 H56 Q48 184 50 176 L66 140 Z" fill="#ffffff" stroke="#2b2b38" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M56 168 H96 L100 176 Q102 182 96 182 H56 Q50 182 52 176 Z" fill="#fbbf24" stroke="#2b2b38" stroke-width="0" stroke-linejoin="round" stroke-linecap="round"/><rect x="150" y="98" width="64" height="86" rx="10" fill="#ffffff" stroke="#2b2b38" stroke-width="2.2" /><rect x="166" y="84" width="32" height="16" rx="4" fill="#cbd5e1" stroke="#2b2b38" stroke-width="2.2" /><rect x="152" y="140" width="60" height="42" rx="8" fill="#fbbf24" stroke="#2b2b38" stroke-width="0" /><rect x="262" y="58" width="104" height="126" rx="16" fill="#ffffff" stroke="#2b2b38" stroke-width="2.2" /><rect x="264" y="116" width="100" height="66" rx="14" fill="#fbbf24" stroke="#2b2b38" stroke-width="0" /><path d="M276 70 V102 M288 70 V96" fill="none" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><path d="M114 152 H138 M132 146 L139 152 L132 158" fill="none" stroke="#b45309" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" /><path d="M224 142 H250 M244 136 L251 142 L244 148" fill="none" stroke="#b45309" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" /><circle cx="360" cy="60" r="15" fill="#22c55e" stroke="#2b2b38" stroke-width="2.2"/><path d="M353.7 60 L358.5 64.8 L366.75 54.75" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" /><text x="76" y="208" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">Lab</text><text x="182" y="208" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">Pilot</text><text x="314" y="208" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">Plant</text>
+</svg>

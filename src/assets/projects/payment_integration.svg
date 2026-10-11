@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 235" width="400" height="235" role="img" aria-label="Partners connected through one central integration hub">
+  <!-- Original illustration for the Featured Projects cards. Free to use. -->
+  <defs>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#4338ca" opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="235" fill="#eef2ff"/>
+  <rect width="400" height="235" fill="url(#dots)"/>
+  <circle cx="345" cy="30" r="95" fill="#818cf8" opacity="0.14"/>
+  <circle cx="40" cy="225" r="70" fill="#818cf8" opacity="0.12"/>
+<path d="M82 52 L200 117" fill="none" stroke="#4338ca" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/><path d="M82 184 L200 117" fill="none" stroke="#4338ca" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/><path d="M318 52 L200 117" fill="none" stroke="#4338ca" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/><path d="M318 184 L200 117" fill="none" stroke="#4338ca" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/><rect x="34" y="34" width="96" height="36" rx="18" fill="#ffffff" stroke="#2b2b38" stroke-width="2.2" /><text x="82" y="57" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#2b2b38" text-anchor="middle">Scheme</text><rect x="34" y="166" width="96" height="36" rx="18" fill="#ffffff" stroke="#2b2b38" stroke-width="2.2" /><text x="82" y="189" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#2b2b38" text-anchor="middle">Perso bureau</text><rect x="270" y="34" width="96" height="36" rx="18" fill="#ffffff" stroke="#2b2b38" stroke-width="2.2" /><text x="318" y="57" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#2b2b38" text-anchor="middle">Finance</text><rect x="270" y="166" width="96" height="36" rx="18" fill="#ffffff" stroke="#2b2b38" stroke-width="2.2" /><text x="318" y="189" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#2b2b38" text-anchor="middle">Legal</text><rect x="166" y="83" width="68" height="68" rx="16" fill="#818cf8" stroke="#2b2b38" stroke-width="2.6" /><path d="M184 108 H214 M208 102 L214 108 L208 114" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M216 126 H186 M192 120 L186 126 L192 132" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
