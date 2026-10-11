@@ -305,6 +305,20 @@ main {
   margin-bottom: 2.5rem;
 }
 
+/* Certification badge on the first line of the hero subtitle */
+.subtitle-cert {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(129, 140, 248, 0.5);
+  color: #c7d2fe;
+  font-weight: 600;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 18px rgba(99, 102, 241, 0.25);
+}
+
 /* Buttons */
 .cta-buttons {
   display: flex;

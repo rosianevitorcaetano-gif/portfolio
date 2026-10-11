@@ -1,0 +1,579 @@
+/* ITIL 4 path section.
+   One colour per ITIL 4 module, used for the card edge, its chips and the journey steps. */
+.itil-section {
+  --cds: #818cf8;
+  --msf: #22d3ee;
+  --pic: #fbbf24;
+  --dpi: #f472b6;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
+}
+
+[data-module="cds"] {
+  --mod: var(--cds);
+  --mod-soft: rgba(129, 140, 248, 0.12);
+}
+
+[data-module="msf"] {
+  --mod: var(--msf);
+  --mod-soft: rgba(34, 211, 238, 0.12);
+}
+
+[data-module="pic"] {
+  --mod: var(--pic);
+  --mod-soft: rgba(251, 191, 36, 0.12);
+}
+
+[data-module="dpi"] {
+  --mod: var(--dpi);
+  --mod-soft: rgba(244, 114, 182, 0.12);
+}
+
+.itil-eyebrow {
+  display: block;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.itil-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.itil-intro {
+  max-width: 760px;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+/* Certification path */
+.cert-path {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.cert {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* "= ITIL 4 Practice Manager" wraps as one unit */
+.cert-result {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.cert > span {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.cert-award {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.35), rgba(165, 166, 246, 0.15));
+  border-color: rgba(129, 140, 248, 0.6);
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.cert-award > span {
+  color: #c7d2fe;
+}
+
+.cert-op {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cert-caption {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0.9rem 0 2rem;
+}
+
+/* Legend */
+.itil-legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.75rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.itil-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-cert {
+  background: rgba(99, 102, 241, 0.18);
+  color: #c7d2fe;
+  border: 1px solid rgba(129, 140, 248, 0.45);
+}
+
+.badge-hands {
+  color: var(--text-secondary);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.chip-sample {
+  padding: 0.15rem 0.6rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #e4e4e7;
+  color: #0a0a0a;
+}
+
+/* Flow: stacked on small screens, one row on wide screens */
+.itil-flow {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-top: 3px solid var(--mod);
+  border-radius: 16px;
+  padding: 1.25rem;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stage-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.stage-num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--mod);
+  line-height: 1;
+}
+
+.stage-code {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--mod);
+  background: var(--mod-soft);
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+}
+
+.stage-head .badge {
+  margin-left: auto;
+}
+
+.stage-role {
+  color: var(--mod);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.stage h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.7rem;
+}
+
+.stage-lead {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.chips li {
+  font-size: 0.78rem;
+  line-height: 1.3;
+  color: var(--mod);
+  background: var(--mod-soft);
+  padding: 0.3rem 0.65rem;
+  border-radius: 50px;
+}
+
+.chips li.chip-owned {
+  background: var(--mod);
+  color: #0a0a0a;
+  font-weight: 600;
+}
+
+.stage-applied {
+  margin-bottom: 1rem;
+}
+
+.stage-applied summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.stage-applied summary::-webkit-details-marker {
+  display: none;
+}
+
+.stage-applied summary::before {
+  content: '';
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 2px solid var(--mod);
+  border-bottom: 2px solid var(--mod);
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease;
+}
+
+.stage-applied[open] summary::before {
+  transform: rotate(45deg);
+}
+
+.stage-applied summary:hover {
+  color: var(--mod);
+}
+
+.stage-applied summary:focus-visible {
+  outline: 2px solid var(--mod);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.stage-applied ul {
+  margin: 0.75rem 0 0 1rem;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.stage-applied li {
+  margin-bottom: 0.45rem;
+}
+
+.stage-applied li::marker {
+  color: var(--mod);
+}
+
+.stage-next {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--card-border);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.stage-next span {
+  color: var(--mod);
+  font-weight: 600;
+}
+
+/* Arrows between stages point down when stacked, right when in a row */
+.flow-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+}
+
+.flow-arrow svg {
+  width: 26px;
+  height: 26px;
+  transform: rotate(90deg);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.flow-arrow[data-to="msf"] {
+  color: var(--msf);
+}
+
+.flow-arrow[data-to="pic"] {
+  color: var(--pic);
+}
+
+.flow-arrow[data-to="dpi"] {
+  color: var(--dpi);
+}
+
+/* Loop back from step 04 to step 01 */
+.flow-loop {
+  margin: 1.25rem 0 3.5rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.loop-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-right: 0.35rem;
+  vertical-align: -0.2em;
+  fill: none;
+  stroke: var(--cds);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (min-width: 1100px) {
+  .itil-flow {
+    grid-template-columns: 1fr 44px 1fr 44px 1fr 44px 1fr;
+    align-items: stretch;
+  }
+
+  .flow-arrow {
+    height: auto;
+  }
+
+  .flow-arrow svg {
+    transform: none;
+  }
+
+  /* A U-shaped track under the row, from the last card back to the first */
+  .flow-loop {
+    position: relative;
+    margin: 0 11% 3.5rem;
+    padding-top: 2.6rem;
+  }
+
+  .flow-loop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.7rem;
+    border: 2px dashed rgba(255, 255, 255, 0.22);
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .flow-loop::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -6px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid var(--cds);
+  }
+
+  .flow-loop .loop-icon {
+    display: none;
+  }
+}
+
+/* Journey */
+.journey {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+
+.journey-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.journey-head h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.journey-head p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 620px;
+}
+
+.journey-controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.journey-controls .btn {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.65rem 1.5rem;
+  white-space: nowrap;
+}
+
+.journey-controls .btn.secondary {
+  background: transparent;
+}
+
+.journey-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 0.75rem;
+}
+
+/* Nine steps read best as a 3 x 3 grid on wide screens */
+@media (min-width: 900px) {
+  .journey-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.journey-step {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100%;
+  height: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--mod);
+  font-family: inherit;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.25s ease, border-color 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+}
+
+.journey-step:hover,
+.journey-step.is-related {
+  background: var(--mod-soft);
+}
+
+.journey-step:focus-visible {
+  outline: 2px solid var(--mod);
+  outline-offset: 2px;
+}
+
+.jstep-num {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--mod);
+}
+
+.jstep-practice {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.jstep-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.journey-step.is-active {
+  background: var(--mod-soft);
+  border-color: var(--mod);
+  transform: translateY(-3px);
+}
+
+.journey-step.is-done {
+  opacity: 0.6;
+}
+
+.journey-status {
+  min-height: 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* While a step is traced, the matching stage lights up and the others step back */
+.itil-flow.is-tracing .stage {
+  opacity: 0.35;
+}
+
+.itil-flow.is-tracing .stage.is-lit {
+  opacity: 1;
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 1px var(--mod), 0 14px 40px -14px var(--mod);
+}
+
+@media (max-width: 768px) {
+  .itil-section h2 {
+    font-size: 2rem;
+  }
+
+  .journey {
+    padding: 1.25rem;
+  }
+
+  .journey-controls {
+    width: 100%;
+  }
+
+  .journey-controls .btn {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .stage,
+  .journey-step,
+  .stage-applied summary::before {
+    transition: none;
+  }
+
+  .itil-flow.is-tracing .stage.is-lit,
+  .journey-step.is-active {
+    transform: none;
+  }
+}
