@@ -83,8 +83,21 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: clamp(1rem, 1.6vw, 2rem);
   list-style: none;
+  white-space: nowrap;
+}
+
+/* Seven links: smaller type and a shorter logo on medium screens */
+@media (max-width: 1250px) {
+  .nav-links {
+    font-size: 0.9rem;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
 }
 
 /* Projects Section */
