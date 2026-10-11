@@ -5,21 +5,22 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/portfolio/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rosiane Vitor Caetano | ITIL 4 Practice Manager</title>
+  <title>Rosiane Caetano | ITIL 4 Practice Manager</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/portfolio/assets/index-D2KYeVvI.js"></script>
-  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-_GQaGjrJ.css">
+  <script type="module" crossorigin src="/portfolio/assets/index-9eV_cyKD.js"></script>
+  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DKRc9jHf.css">
 </head>
 
 <body>
   <header>
     <nav>
-      <div class="logo">Rosiane Vitor Caetano</div>
+      <div class="logo">Rosiane Caetano</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#itil">ITIL Path</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -28,13 +29,34 @@
   </header>
 
   <main>
-    <section id="hero" class="hero">
+    <!-- Hero: name, titles and About text on the left, photo on the right -->
+    <section id="about" class="hero">
       <div class="hero-content">
-        <span class="greeting">Hello, I'm</span>
-        <h1 class="glitch-text" data-text="Rosiane Vitor Caetano">Rosiane Vitor Caetano</h1>
-        <p class="subtitle"><span class="subtitle-cert">ITIL 4 Practice Manager</span><br>
-          Senior Incident & Problem Manager | Project Manager <br> Chemical & Process Engineer | MSc
-          Water Technology</p>
+        <h1>Rosiane Caetano</h1>
+        <p class="hero-titles">
+          <span class="ht ht-lead">ITIL 4 Practice Manager</span><span class="ht-sep" aria-hidden="true"> / </span><span class="ht">IT Service Manager</span><br class="ht-br" />
+          <span class="ht">Chemical Engineer</span><span class="ht-sep" aria-hidden="true"> / </span><span class="ht">Master of Science in Water Technology</span>
+        </p>
+        <div class="hero-about">
+          <p>I am a versatile professional combining expertise in <strong>Incident & Problem Management</strong> with a strong foundation in <strong>Chemical & Process Engineering</strong>.</p>
+          <p>With an MSc in Water Technology and background in Payment Systems, I bridge the gap between technical operations and strategic project management. My experience spans from <strong>Biotechnology</strong> (vaccine production) and the <strong>Gases Industry</strong> to <strong>Water Treatment</strong> solutions for both industrial and domestic usage.</p>
+        </div>
+        <div class="skills-container">
+          <h3>Core Competencies</h3>
+          <div class="skills-tags">
+            <span class="skill-tag">ITIL 4 Practice Manager</span>
+            <span class="skill-tag">ITSM (ServiceNow)</span>
+            <span class="skill-tag">Process Engineering</span>
+            <span class="skill-tag">Project Management</span>
+            <span class="skill-tag">Data Analytics</span>
+            <span class="skill-tag">Water Technology</span>
+            <span class="skill-tag">Membrane Technology</span>
+            <span class="skill-tag">Biotechnology</span>
+            <span class="skill-tag">Industrial Gases</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
         <div class="cta-buttons">
           <a href="#projects" class="btn primary">View My Work</a>
           <a href="#contact" class="btn secondary">Contact Me</a>
@@ -42,115 +64,165 @@
       </div>
       <div class="hero-visual">
         <div class="image-container">
-          <img src="/portfolio/assets/profile-DN3CACSb.jpeg" alt="Rosiane Vitor Caetano" class="profile-image" />
+          <img src="/portfolio/assets/profile-DN3CACSb.jpeg" alt="Rosiane Caetano" class="profile-image" />
           <div class="image-glow"></div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section about-section">
+    <!-- Experience, Education and Certifications as horizontal timelines, newest first. Arrow buttons: src/timeline.js -->
+    <section id="experience" class="section experience-section">
       <div class="container">
-        <div class="about-grid">
-          <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-              I am a versatile professional combining expertise in <strong>Incident & Problem Management</strong> with a
-              strong foundation in <strong>Chemical & Process Engineering</strong>.
-            </p>
-            <p>
-              With an MSc in Water Technology and background in Payment Systems, I bridge the gap between technical
-              operations and strategic project management. My experience spans from <strong>Biotechnology</strong>
-              (vaccine production) and the <strong>Gases Industry</strong> to <strong>Water Treatment</strong> solutions
-              for both industrial and domestic usage.
-            </p>
-
-            <div class="skills-container">
-              <h3>Core Competencies</h3>
-              <div class="skills-tags">
-                <span class="skill-tag">ITIL 4 Practice Manager</span>
-                <span class="skill-tag">ITSM (ServiceNow)</span>
-                <span class="skill-tag">Process Engineering</span>
-                <span class="skill-tag">Project Management</span>
-                <span class="skill-tag">Data Analytics</span>
-                <span class="skill-tag">Water Technology</span>
-                <span class="skill-tag">Membrane Technology</span>
-                <span class="skill-tag">Biotechnology</span>
-                <span class="skill-tag">Industrial Gases</span>
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">SQL</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="experience-column">
-            <h2>Experience</h2>
-            <div class="timeline">
-              <div class="timeline-item">
-                <span class="date">01.2020 - 10.2024</span>
-                <h3>Incident & Problem Manager</h3>
-                <span class="company">PagoNxt Merchant Solutions (Santander)</span>
-                <p>Tracked and coordinated the resolution of critical incidents across the payment ecosystem. Analyzed
-                  trends using Power BI and ServiceNow to drive improvements.</p>
-              </div>
-              <div class="timeline-item">
-                <span class="date">07.2019 – 12.2019</span>
-                <h3>Project Manager</h3>
-                <span class="company">Wirecard Technologies GmbH</span>
-                <p>Supported international payout projects involving Product, Financial, and Legal teams. Coordinated
-                  Scheme & Perso Bureau Integration.</p>
-              </div>
-              <div class="timeline-item">
-                <span class="date">06.2017 - 12.2017</span>
-                <h3>PhD Candidate (Chemical Eng.)</h3>
-                <span class="company">University of Zaragoza, Spain</span>
-                <p>Defined parameters affecting biochar stability and applied Design of Experiments (DOE) based on
-                  statistical methodology.</p>
-              </div>
-              <div class="timeline-item">
-                <span class="date">04.2015 - 12.2015</span>
-                <h3>Research Intern (Membrane Tech)</h3>
-                <span class="company">Technische Universität München, Germany</span>
-                <p>Investigated operational parameters for nanofiltration and reverse osmosis membranes.</p>
-              </div>
-              <div class="timeline-item">
-                <span class="date">12.2011 - 08.2013</span>
-                <h3>Chemical Engineer</h3>
-                <span class="company">Geasanevita Engenharia, Brazil</span>
-                <p>Designed optimal solutions for water consumption reduction in mining companies. Collaborated with
-                  mechanical and electrical engineering teams.</p>
-              </div>
-              <div class="timeline-item">
-                <span class="date">05.2010 - 07.2011</span>
-                <h3>Intern in Sales and Projects</h3>
-                <span class="company">White Martins (Praxair Inc.), Brazil</span>
-                <p>Assisted in technical sales and customer retention for the gas industry. Provided technical support
-                  for environmental solutions.</p>
-              </div>
-              <div class="timeline-item">
-                <span class="date">04.2009 - 09.2009</span>
-                <h3>Biotech Process Intern</h3>
-                <span class="company">Instituto Butantan, Brazil</span>
-                <p>Simulated vaccine production scale-up feasibility using SuperPro Designer. Analyzed experimental data
-                  for biotechnology processes.</p>
-              </div>
-
-              <h2>Education</h2>
-              <div class="timeline-item">
-                <span class="date">2013 - 2015</span>
-                <h3>MSc in Water Technology</h3>
-                <span class="company">Wetsus Academy, The Netherlands</span>
-                <p>Specialization in sustainable water technology. Thesis: "Investigation of membrane fouling in MBR".
-                </p>
-              </div>
-              <div class="timeline-item">
-                <span class="date">2005 - 2011</span>
-                <h3>BSc in Chemical Engineering</h3>
-                <span class="company">Universidade Federal de São Carlos, Brazil</span>
-                <p>Bachelor Thesis on process optimization for vaccine production.</p>
-              </div>
-            </div>
+        <div class="htl-head">
+          <h2>Experience</h2>
+          <div class="htl-arrows" data-htl-arrows="experience-list">
+            <button type="button" class="htl-arrow" aria-label="Scroll experience back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg></button>
+            <button type="button" class="htl-arrow" aria-label="Scroll experience forward"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg></button>
           </div>
         </div>
+        <ol class="htl" id="experience-list" tabindex="0" aria-label="Experience, newest first">
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">01.2020 - 10.2024</span>
+              <h3>Incident & Problem Manager</h3>
+              <span class="htl-org">PagoNxt Merchant Solutions (Santander)</span>
+              <p>Tracked and coordinated the resolution of critical incidents across the payment ecosystem. Analyzed trends using Power BI and ServiceNow to drive improvements.</p>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">07.2019 – 12.2019</span>
+              <h3>Project Manager</h3>
+              <span class="htl-org">Wirecard Technologies GmbH</span>
+              <p>Supported international payout projects involving Product, Financial, and Legal teams. Coordinated Scheme & Perso Bureau Integration.</p>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">06.2017 - 12.2017</span>
+              <h3>PhD Candidate (Chemical Eng.)</h3>
+              <span class="htl-org">University of Zaragoza, Spain</span>
+              <p>Defined parameters affecting biochar stability and applied Design of Experiments (DOE) based on statistical methodology.</p>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">04.2015 - 12.2015</span>
+              <h3>Research Intern (Membrane Tech)</h3>
+              <span class="htl-org">Technische Universität München, Germany</span>
+              <p>Investigated operational parameters for nanofiltration and reverse osmosis membranes.</p>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">12.2011 - 08.2013</span>
+              <h3>Chemical Engineer</h3>
+              <span class="htl-org">Geasanevita Engenharia, Brazil</span>
+              <p>Designed optimal solutions for water consumption reduction in mining companies. Collaborated with mechanical and electrical engineering teams.</p>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">05.2010 - 07.2011</span>
+              <h3>Intern in Sales and Projects</h3>
+              <span class="htl-org">Praxair Gases Industry, Brazil</span>
+              <p>Assisted in technical sales and customer retention for the gas industry. Provided technical support for environmental solutions.</p>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">04.2009 - 09.2009</span>
+              <h3>Biotech Process Intern</h3>
+              <span class="htl-org">Butantan Institute, Brazil</span>
+              <p>Simulated vaccine production scale-up feasibility using SuperPro Designer. Analyzed experimental data for biotechnology processes.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="htl-head">
+          <h2>Education</h2>
+          <div class="htl-arrows" data-htl-arrows="education-list">
+            <button type="button" class="htl-arrow" aria-label="Scroll education back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg></button>
+            <button type="button" class="htl-arrow" aria-label="Scroll education forward"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg></button>
+          </div>
+        </div>
+        <ol class="htl htl-fill" id="education-list" tabindex="0" aria-label="Education, newest first">
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">2013 - 2015</span>
+              <h3>MSc in Water Technology</h3>
+              <span class="htl-org">Wetsus Academy, The Netherlands</span>
+              <p>Specialization in sustainable water technology. Thesis: "Investigation of membrane fouling in MBR".</p>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">2005 - 2011</span>
+              <h3>BSc in Chemical Engineering</h3>
+              <span class="htl-org">Universidade Federal de São Carlos, Brazil</span>
+              <p>Bachelor Thesis on process optimization for vaccine production.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="htl-head">
+          <h2>Certifications</h2>
+          <div class="htl-arrows" data-htl-arrows="certification-list">
+            <button type="button" class="htl-arrow" aria-label="Scroll certifications back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg></button>
+            <button type="button" class="htl-arrow" aria-label="Scroll certifications forward"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg></button>
+          </div>
+        </div>
+        <ol class="htl htl-certs" id="certification-list" tabindex="0" aria-label="Certifications, newest first">
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">2026</span>
+              <h3>ITIL 4 Practice Manager</h3>
+              <span class="htl-org">Earned with ITIL 4 Specialist: Create, Deliver and Support and ITIL 4 Specialist: Plan, Implement and Control (both 2026)</span>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">2026</span>
+              <h3>AI Strategy &amp; Governance, Foundation &amp; Practitioner</h3>
+              <span class="htl-org">The Knowledge Academy</span>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">2025</span>
+              <h3>Microsoft Azure Fundamentals</h3>
+              <span class="htl-org">Microsoft</span>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">2020</span>
+              <h3>ITIL v4 Foundation</h3>
+              <span class="htl-org">IT service management</span>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">2020</span>
+              <h3>Professional Scrum Master I</h3>
+              <span class="htl-org">Scrum and agile delivery</span>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">2020</span>
+              <h3>Digital Product Management: Modern Fundamentals</h3>
+              <span class="htl-org">Product management</span>
+            </div>
+          </li>
+          <li class="htl-item">
+            <div class="htl-card">
+              <span class="htl-date">2013</span>
+              <h3>ISO 9001, ISO 14001 and OHSAS 18001</h3>
+              <span class="htl-org">Quality, environmental and health and safety management systems, Brazil</span>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -188,9 +260,13 @@
           <li><span class="chip-sample">Owned</span> Practice I owned end to end</li>
         </ul>
 
+        <!-- Card pictures live in src/assets/itil/. cds.svg is an original drawing (tools/make_itil_art.py),
+             free to publish. Cards 02-04 get a picture once licensed files exist: add a
+             <figure class="stage-art"> like card 01's. -->
         <div class="itil-flow" data-itil-flow>
           <!-- 01 CDS -->
           <article class="stage" data-module="cds" aria-labelledby="stage-cds">
+            <figure class="stage-art"><img src="/portfolio/assets/cds-sov2SZMa.svg" alt="Manga-style drawing of Rosiane in a blazer, presenting the four steps of the path on a whiteboard" loading="lazy" /></figure>
             <div class="stage-head">
               <span class="stage-num">01</span>
               <span class="stage-code">CDS</span>
@@ -399,20 +475,22 @@
     <section id="projects" class="section projects-section">
       <div class="container">
         <h2>Featured Projects</h2>
+        <p class="projects-intro">Each project seen through an ITIL 4 lens: the module and practices the same work maps to today.</p>
         <div class="projects-grid">
           <!-- Project 1 -->
           <article class="project-card">
             <div class="project-image">
-              <img src="/portfolio/assets/incident_management-yy4dM8mg.png" alt="Incident Management Dashboard" />
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjM1IiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIzNSIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJJbmNpZGVudCBjaGFydCB3aXRoIGFuIGFsZXJ0IGFuZCBhIHRpY2tldCBlc2NhbGF0ZWQgdG8gYSBwcm9ibGVtIHJlY29yZCI+CiAgPCEtLSBPcmlnaW5hbCBpbGx1c3RyYXRpb24gZm9yIHRoZSBGZWF0dXJlZCBQcm9qZWN0cyBjYXJkcy4gRnJlZSB0byB1c2UuIC0tPgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9ImRvdHMiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxjaXJjbGUgY3g9IjIiIGN5PSIyIiByPSIxLjIiIGZpbGw9IiMwZTc0OTAiIG9wYWNpdHk9IjAuMTIiLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIyMzUiIGZpbGw9IiNlY2ZlZmYiLz4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIzNSIgZmlsbD0idXJsKCNkb3RzKSIvPgogIDxjaXJjbGUgY3g9IjM0NSIgY3k9IjMwIiByPSI5NSIgZmlsbD0iIzIyZDNlZSIgb3BhY2l0eT0iMC4xNCIvPgogIDxjaXJjbGUgY3g9IjQwIiBjeT0iMjI1IiByPSI3MCIgZmlsbD0iIzIyZDNlZSIgb3BhY2l0eT0iMC4xMiIvPgo8cmVjdCB4PSIzNiIgeT0iMzQiIHdpZHRoPSIyMjAiIGhlaWdodD0iMTYwIiByeD0iMTAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyLjIiIC8+PHBhdGggZD0iTTM2IDU4IEgyNTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48Y2lyY2xlIGN4PSI1MiIgY3k9IjQ2IiByPSIzLjUiIGZpbGw9IiNmODcxNzEiLz48Y2lyY2xlIGN4PSI2NCIgY3k9IjQ2IiByPSIzLjUiIGZpbGw9IiNmYmJmMjQiLz48Y2lyY2xlIGN4PSI3NiIgY3k9IjQ2IiByPSIzLjUiIGZpbGw9IiM0YWRlODAiLz48cGF0aCBkPSJNNTYgMTc2IEgyMzggTTU2IDE3NiBWNzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2NiZDVlMSIgc3Ryb2tlLXdpZHRoPSIxLjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48cGF0aCBkPSJNNTggMTYwIEw4MiAxNTIgTDEwMiAxNTYgTDEyMiAxMzIgTDEzOCA4NiBMMTU0IDE0MiBMMTc2IDE0NiBMMTk4IDE0MCBMMjIwIDEzOCBMMjM4IDEzNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGU3NDkwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48Y2lyY2xlIGN4PSIxMzgiIGN5PSI4NiIgcj0iOSIgZmlsbD0iI2VmNDQ0NCIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIvPjx0ZXh0IHg9IjEzOCIgeT0iOTAuNSIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPiE8L3RleHQ+PHJlY3QgeD0iMTc2IiB5PSI2OCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiNmZWUyZTIiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIxLjgiIC8+PHRleHQgeD0iMTk2IiB5PSI4MiIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEuNSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2I5MWMxYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UDE8L3RleHQ+PHJlY3QgeD0iMjc4IiB5PSI1MiIgd2lkdGg9IjkyIiBoZWlnaHQ9IjUwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIgLz48dGV4dCB4PSIyOTgiIHk9IjcyIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzBlNzQ5MCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5JTkM8L3RleHQ+PHBhdGggZD0iTTI5OCA4NCBIMzUwIE0yOTggOTIgSDMzNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjY2JkNWUxIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48cmVjdCB4PSIyNzgiIHk9IjEzMiIgd2lkdGg9IjkyIiBoZWlnaHQ9IjUwIiByeD0iOCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIgLz48dGV4dCB4PSIyOTgiIHk9IjE1MiIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMwZTc0OTAiIHRleHQtYW5jaG9yPSJzdGFydCI+UFJCPC90ZXh0PjxwYXRoIGQ9Ik0yOTggMTY0IEgzNTAgTTI5OCAxNzIgSDMzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjY2JkNWUxIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48cGF0aCBkPSJNMzI0IDEwNCBWMTI2IE0zMTggMTIwIEwzMjQgMTI3IEwzMzAgMTIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwZTc0OTAiIHN0cm9rZS13aWR0aD0iMi40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PGNpcmNsZSBjeD0iMzY2IiBjeT0iMTgyIiByPSIxMyIgZmlsbD0iIzIyYzU1ZSIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIvPjxwYXRoIGQ9Ik0zNjAuNTQgMTgyIEwzNjQuNyAxODYuMTYgTDM3MS44NSAxNzcuNDUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz4KPC9zdmc+Cg==" alt="Incident chart with an alert and a ticket escalated to a problem record" />
             </div>
             <div class="project-content">
               <h3>Incident Management Optimization</h3>
               <p>Reduced downtime and improved recovery times by implementing data-driven incident prioritization
                 policies.</p>
+              <div class="itil-lens" data-module="msf"><span class="lens-code">ITIL 4 · MSF</span><span class="lens-practices">Incident management, Problem management</span></div>
               <div class="project-tags">
                 <span>Power BI</span>
                 <span>ServiceNow</span>
-                <span>ITIL v.4</span>
+                <span>ITIL 4</span>
               </div>
               <div class="project-links">
                 <span class="link-btn">PagoNxt</span>
@@ -423,12 +501,13 @@
           <!-- Project 2 -->
           <article class="project-card">
             <div class="project-image">
-              <img src="/portfolio/assets/citi_migration-iA8o5LZc.png" alt="Global Systems Migration" />
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjM1IiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIzNSIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJDaGVja2xpc3QgZm9yIGEgY29udHJvbGxlZCBzZXJ2aWNlIHNodXRkb3duIG5leHQgdG8gYSBwb3dlciBzd2l0Y2giPgogIDwhLS0gT3JpZ2luYWwgaWxsdXN0cmF0aW9uIGZvciB0aGUgRmVhdHVyZWQgUHJvamVjdHMgY2FyZHMuIEZyZWUgdG8gdXNlLiAtLT4KICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJkb3RzIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIyIiBjeT0iMiIgcj0iMS4yIiBmaWxsPSIjYjQ1MzA5IiBvcGFjaXR5PSIwLjEyIi8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjM1IiBmaWxsPSIjZmZmYmViIi8+CiAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIyMzUiIGZpbGw9InVybCgjZG90cykiLz4KICA8Y2lyY2xlIGN4PSIzNDUiIGN5PSIzMCIgcj0iOTUiIGZpbGw9IiNmYmJmMjQiIG9wYWNpdHk9IjAuMTQiLz4KICA8Y2lyY2xlIGN4PSI0MCIgY3k9IjIyNSIgcj0iNzAiIGZpbGw9IiNmYmJmMjQiIG9wYWNpdHk9IjAuMTIiLz4KPHJlY3QgeD0iNDgiIHk9IjM4IiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE3NiIgcng9IjEwIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMi4yIiAvPjxyZWN0IHg9Ijk4IiB5PSIyOCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjIwIiByeD0iNSIgZmlsbD0iI2NiZDVlMSIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIgLz48cmVjdCB4PSI2NiIgeT0iNzAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcng9IjQiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyIiAvPjxwYXRoIGQ9Ik03MCA4MCBMNzUgODUgTDgzIDc1IiBmaWxsPSJub25lIiBzdHJva2U9IiNiNDUzMDkiIHN0cm9rZS13aWR0aD0iMi42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHRleHQgeD0iOTYiIHk9Ijg1IiBmb250LWZhbWlseT0iSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzJiMmIzOCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5MZWdhbCBzdGVwczwvdGV4dD48cmVjdCB4PSI2NiIgeT0iMTA0IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHJ4PSI0IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMiIgLz48cGF0aCBkPSJNNzAgMTE0IEw3NSAxMTkgTDgzIDEwOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYjQ1MzA5IiBzdHJva2Utd2lkdGg9IjIuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjx0ZXh0IHg9Ijk2IiB5PSIxMTkiIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMmIyYjM4IiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkNhcmRob2xkZXJzPC90ZXh0PjxyZWN0IHg9IjY2IiB5PSIxMzgiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcng9IjQiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyIiAvPjxwYXRoIGQ9Ik03MCAxNDggTDc1IDE1MyBMODMgMTQzIiBmaWxsPSJub25lIiBzdHJva2U9IiNiNDUzMDkiIHN0cm9rZS13aWR0aD0iMi42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHRleHQgeD0iOTYiIHk9IjE1MyIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMyYjJiMzgiIHRleHQtYW5jaG9yPSJzdGFydCI+QmFsYW5jZXM8L3RleHQ+PHJlY3QgeD0iNjYiIHk9IjE3MiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIiIC8+PHBhdGggZD0iTTcwIDE4MiBMNzUgMTg3IEw4MyAxNzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2I0NTMwOSIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48dGV4dCB4PSI5NiIgeT0iMTg3IiBmb250LWZhbWlseT0iSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzJiMmIzOCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5DaGFyZ2ViYWNrczwvdGV4dD48Y2lyY2xlIGN4PSIzMDAiIGN5PSIxMDQiIHI9IjUyIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMi42Ii8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMTA0IiByPSI0MCIgZmlsbD0iI2ZiYmYyNCIgb3BhY2l0eT0iMC4yNSIvPjxwYXRoIGQ9Ik0zMDAgNzggVjEwMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYjQ1MzA5IiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48cGF0aCBkPSJNMjg1IDg4IEEyMiAyMiAwIDEgMCAzMTUgODgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2I0NTMwOSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHJlY3QgeD0iMjQ2IiB5PSIxNzIiIHdpZHRoPSIxMDgiIGhlaWdodD0iMjQiIHJ4PSIxMiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjYjQ1MzA5IiBzdHJva2Utd2lkdGg9IjEuOCIgLz48dGV4dCB4PSIzMDAuMCIgeT0iMTg4IiBmb250LWZhbWlseT0iSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMS41IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYjQ1MzA5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TZXJ2aWNlIHJldGlyZWQ8L3RleHQ+Cjwvc3ZnPgo=" alt="Checklist for a controlled service shutdown next to a power switch" />
             </div>
             <div class="project-content">
               <h3>Australian Citi Systems Migration</h3>
               <p>Coordinated stakeholders to implement legal measures and manage financial activities for system
                 decommission.</p>
+              <div class="itil-lens" data-module="pic"><span class="lens-code">ITIL 4 · PIC</span><span class="lens-practices">Change enablement, Deployment management, Relationship management</span></div>
               <div class="project-tags">
                 <span>Migration</span>
                 <span>Stakeholder Mgmt</span>
@@ -443,12 +522,13 @@
           <!-- Project 3 -->
           <article class="project-card">
             <div class="project-image">
-              <img src="/portfolio/assets/payment_integration-jfPk2gbr.png" alt="Payment System Integration" />
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjM1IiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIzNSIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQYXJ0bmVycyBjb25uZWN0ZWQgdGhyb3VnaCBvbmUgY2VudHJhbCBpbnRlZ3JhdGlvbiBodWIiPgogIDwhLS0gT3JpZ2luYWwgaWxsdXN0cmF0aW9uIGZvciB0aGUgRmVhdHVyZWQgUHJvamVjdHMgY2FyZHMuIEZyZWUgdG8gdXNlLiAtLT4KICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJkb3RzIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIyIiBjeT0iMiIgcj0iMS4yIiBmaWxsPSIjNDMzOGNhIiBvcGFjaXR5PSIwLjEyIi8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjM1IiBmaWxsPSIjZWVmMmZmIi8+CiAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIyMzUiIGZpbGw9InVybCgjZG90cykiLz4KICA8Y2lyY2xlIGN4PSIzNDUiIGN5PSIzMCIgcj0iOTUiIGZpbGw9IiM4MThjZjgiIG9wYWNpdHk9IjAuMTQiLz4KICA8Y2lyY2xlIGN4PSI0MCIgY3k9IjIyNSIgcj0iNzAiIGZpbGw9IiM4MThjZjgiIG9wYWNpdHk9IjAuMTIiLz4KPHBhdGggZD0iTTgyIDUyIEwyMDAgMTE3IiBmaWxsPSJub25lIiBzdHJva2U9IiM0MzM4Y2EiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtZGFzaGFycmF5PSI1IDUiLz48cGF0aCBkPSJNODIgMTg0IEwyMDAgMTE3IiBmaWxsPSJub25lIiBzdHJva2U9IiM0MzM4Y2EiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtZGFzaGFycmF5PSI1IDUiLz48cGF0aCBkPSJNMzE4IDUyIEwyMDAgMTE3IiBmaWxsPSJub25lIiBzdHJva2U9IiM0MzM4Y2EiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtZGFzaGFycmF5PSI1IDUiLz48cGF0aCBkPSJNMzE4IDE4NCBMMjAwIDExNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDMzOGNhIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWRhc2hhcnJheT0iNSA1Ii8+PHJlY3QgeD0iMzQiIHk9IjM0IiB3aWR0aD0iOTYiIGhlaWdodD0iMzYiIHJ4PSIxOCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIgLz48dGV4dCB4PSI4MiIgeT0iNTciIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMyYjJiMzgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlNjaGVtZTwvdGV4dD48cmVjdCB4PSIzNCIgeT0iMTY2IiB3aWR0aD0iOTYiIGhlaWdodD0iMzYiIHJ4PSIxOCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIgLz48dGV4dCB4PSI4MiIgeT0iMTg5IiBmb250LWZhbWlseT0iSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMmIyYjM4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QZXJzbyBidXJlYXU8L3RleHQ+PHJlY3QgeD0iMjcwIiB5PSIzNCIgd2lkdGg9Ijk2IiBoZWlnaHQ9IjM2IiByeD0iMTgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyLjIiIC8+PHRleHQgeD0iMzE4IiB5PSI1NyIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzJiMmIzOCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RmluYW5jZTwvdGV4dD48cmVjdCB4PSIyNzAiIHk9IjE2NiIgd2lkdGg9Ijk2IiBoZWlnaHQ9IjM2IiByeD0iMTgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyLjIiIC8+PHRleHQgeD0iMzE4IiB5PSIxODkiIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMyYjJiMzgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxlZ2FsPC90ZXh0PjxyZWN0IHg9IjE2NiIgeT0iODMiIHdpZHRoPSI2OCIgaGVpZ2h0PSI2OCIgcng9IjE2IiBmaWxsPSIjODE4Y2Y4IiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMi42IiAvPjxwYXRoIGQ9Ik0xODQgMTA4IEgyMTQgTTIwOCAxMDIgTDIxNCAxMDggTDIwOCAxMTQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHBhdGggZD0iTTIxNiAxMjYgSDE4NiBNMTkyIDEyMCBMMTg2IDEyNiBMMTkyIDEzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz4KPC9zdmc+Cg==" alt="Partners connected through one central integration hub" />
             </div>
             <div class="project-content">
               <h3>Scheme & Perso Integration</h3>
               <p>Managed international payout project integrating Product, Financial, and Legal teams with external
                 bureaus.</p>
+              <div class="itil-lens" data-module="cds"><span class="lens-code">ITIL 4 · CDS</span><span class="lens-practices">Supplier management, Relationship management</span></div>
               <div class="project-tags">
                 <span>Integration</span>
                 <span>Compliance</span>
@@ -463,11 +543,12 @@
           <!-- Project 4 -->
           <article class="project-card">
             <div class="project-image">
-              <img src="/portfolio/assets/mining_water-DLf-VdG9.png" alt="Sustainable Mining Water Solutions" />
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjM1IiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIzNSIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJXYXRlciBmbG93IG1ldGVyIG9uIGEgcGlwZSBuZXh0IHRvIGEgZmFsbGluZyBjb25zdW1wdGlvbiBjaGFydCI+CiAgPCEtLSBPcmlnaW5hbCBpbGx1c3RyYXRpb24gZm9yIHRoZSBGZWF0dXJlZCBQcm9qZWN0cyBjYXJkcy4gRnJlZSB0byB1c2UuIC0tPgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9ImRvdHMiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxjaXJjbGUgY3g9IjIiIGN5PSIyIiByPSIxLjIiIGZpbGw9IiNiZTE4NWQiIG9wYWNpdHk9IjAuMTIiLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIyMzUiIGZpbGw9IiNmZGYyZjgiLz4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIzNSIgZmlsbD0idXJsKCNkb3RzKSIvPgogIDxjaXJjbGUgY3g9IjM0NSIgY3k9IjMwIiByPSI5NSIgZmlsbD0iI2Y0NzJiNiIgb3BhY2l0eT0iMC4xNCIvPgogIDxjaXJjbGUgY3g9IjQwIiBjeT0iMjI1IiByPSI3MCIgZmlsbD0iI2Y0NzJiNiIgb3BhY2l0eT0iMC4xMiIvPgo8cGF0aCBkPSJNNTggNDQgQzU4IDQ0IDM4IDcwIDM4IDg0IEEyMCAyMCAwIDAgMCA3OCA4NCBDNzggNzAgNTggNDQgNTggNDQgWiIgZmlsbD0iIzM4YmRmOCIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHJlY3QgeD0iMjQiIHk9IjE1MCIgd2lkdGg9IjE5MCIgaGVpZ2h0PSIyMiIgcng9IjYiIGZpbGw9IiNjYmQ1ZTEiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyLjIiIC8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iMTMwIiByPSIzMiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuNCIvPjxwYXRoIGQ9Ik05OS4xMiAxMTguMCBMOTMuOSAxMTUuMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjEuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjxwYXRoIGQ9Ik0xMDguMCAxMDkuMTIgTDEwNS4wIDEwMy45IiBmaWxsPSJub25lIiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHBhdGggZD0iTTEyMCAxMDYgTDEyMCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIxLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48cGF0aCBkPSJNMTMyLjAgMTA5LjEyIEwxMzUuMCAxMDMuOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjEuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjxwYXRoIGQ9Ik0xNDAuODggMTE4LjAgTDE0Ni4xIDExNS4wIiBmaWxsPSJub25lIiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHBhdGggZD0iTTEyMCAxMzAgTDEzNiAxMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JlMTg1ZCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iMTMwIiByPSI0IiBmaWxsPSIjMmIyYjM4Ii8+PHBhdGggZD0iTTI0MCAxOTYgSDM4MCBNMjQwIDE5NiBWNzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzk0YTNiOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHJlY3QgeD0iMjU0IiB5PSI4NiIgd2lkdGg9IjIyIiBoZWlnaHQ9IjExMCIgcng9IjMiIGZpbGw9IiNmYmNmZTgiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyIiAvPjxyZWN0IHg9IjI4NSIgeT0iMTA4IiB3aWR0aD0iMjIiIGhlaWdodD0iODgiIHJ4PSIzIiBmaWxsPSIjZjlhOGQ0IiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMiIgLz48cmVjdCB4PSIzMTYiIHk9IjEzMCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjY2IiByeD0iMyIgZmlsbD0iI2Y0NzJiNiIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIiIC8+PHJlY3QgeD0iMzQ3IiB5PSIxNTAiIHdpZHRoPSIyMiIgaGVpZ2h0PSI0NiIgcng9IjMiIGZpbGw9IiNlYzQ4OTkiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyIiAvPjxwYXRoIGQ9Ik0yNTYgNzQgTDM2MCAxNDAgTTM0OCAxNDAgTDM2MSAxNDEgTDM1NyAxMjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JlMTg1ZCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHJlY3QgeD0iMjUwIiB5PSIzMiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNCIgcng9IjEyIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiNiZTE4NWQiIHN0cm9rZS13aWR0aD0iMS44IiAvPjx0ZXh0IHg9IjMxMC4wIiB5PSI0OCIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEuNSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2JlMTg1ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWVhc3VyZSwgaW1wcm92ZTwvdGV4dD4KPC9zdmc+Cg==" alt="Water flow meter next to a falling consumption chart" />
             </div>
             <div class="project-content">
               <h3>Water Solutions for Mining</h3>
               <p>Designed optimal water consumption reduction processes for large-scale mining operations.</p>
+              <div class="itil-lens" data-module="dpi"><span class="lens-code">ITIL 4 · DPI</span><span class="lens-practices">Measurement and reporting, Continual improvement</span></div>
               <div class="project-tags">
                 <span>Process Eng.</span>
                 <span>Water Treatment</span>
@@ -482,12 +563,13 @@
           <!-- Project 5 -->
           <article class="project-card">
             <div class="project-image">
-              <img src="/portfolio/assets/membrane_fouling-DNAgv1vl.png" alt="Membrane Technology R&D" />
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjM1IiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIzNSIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJNYWduaWZ5aW5nIGdsYXNzIG92ZXIgZm91bGluZyBvbiBhIG1lbWJyYW5lIHN1cmZhY2UiPgogIDwhLS0gT3JpZ2luYWwgaWxsdXN0cmF0aW9uIGZvciB0aGUgRmVhdHVyZWQgUHJvamVjdHMgY2FyZHMuIEZyZWUgdG8gdXNlLiAtLT4KICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJkb3RzIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIyIiBjeT0iMiIgcj0iMS4yIiBmaWxsPSIjMGU3NDkwIiBvcGFjaXR5PSIwLjEyIi8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjM1IiBmaWxsPSIjZWNmZWZmIi8+CiAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIyMzUiIGZpbGw9InVybCgjZG90cykiLz4KICA8Y2lyY2xlIGN4PSIzNDUiIGN5PSIzMCIgcj0iOTUiIGZpbGw9IiMyMmQzZWUiIG9wYWNpdHk9IjAuMTQiLz4KICA8Y2lyY2xlIGN4PSI0MCIgY3k9IjIyNSIgcj0iNzAiIGZpbGw9IiMyMmQzZWUiIG9wYWNpdHk9IjAuMTIiLz4KPHJlY3QgeD0iNDAiIHk9IjExMiIgd2lkdGg9IjIzMCIgaGVpZ2h0PSI2NCIgcng9IjYiIGZpbGw9IiNlMmU4ZjAiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyLjIiIC8+PHBhdGggZD0iTTU2IDExNiBWMTcyIiBmaWxsPSJub25lIiBzdHJva2U9IiM5NGEzYjgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjxwYXRoIGQ9Ik03MiAxMTYgVjE3MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTRhM2I4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48cGF0aCBkPSJNODggMTE2IFYxNzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzk0YTNiOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHBhdGggZD0iTTEwNCAxMTYgVjE3MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTRhM2I4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48cGF0aCBkPSJNMTIwIDExNiBWMTcyIiBmaWxsPSJub25lIiBzdHJva2U9IiM5NGEzYjgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjxwYXRoIGQ9Ik0xMzYgMTE2IFYxNzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzk0YTNiOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHBhdGggZD0iTTE1MiAxMTYgVjE3MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTRhM2I4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48cGF0aCBkPSJNMTY4IDExNiBWMTcyIiBmaWxsPSJub25lIiBzdHJva2U9IiM5NGEzYjgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjxwYXRoIGQ9Ik0xODQgMTE2IFYxNzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzk0YTNiOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHBhdGggZD0iTTIwMCAxMTYgVjE3MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTRhM2I4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48cGF0aCBkPSJNMjE2IDExNiBWMTcyIiBmaWxsPSJub25lIiBzdHJva2U9IiM5NGEzYjgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjxwYXRoIGQ9Ik0yMzIgMTE2IFYxNzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzk0YTNiOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHBhdGggZD0iTTI0OCAxMTYgVjE3MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTRhM2I4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48cGF0aCBkPSJNMjY0IDExNiBWMTcyIiBmaWxsPSJub25lIiBzdHJva2U9IiM5NGEzYjgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjxjaXJjbGUgY3g9IjcwIiBjeT0iMTA2IiByPSI3IiBmaWxsPSIjYjQ1MzA5IiBvcGFjaXR5PSIwLjc1IiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMS42Ii8+PGNpcmNsZSBjeD0iODgiIGN5PSIxMDQiIHI9IjkiIGZpbGw9IiNiNDUzMDkiIG9wYWNpdHk9IjAuNzUiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSIxMDgiIGN5PSIxMDciIHI9IjYiIGZpbGw9IiNiNDUzMDkiIG9wYWNpdHk9IjAuNzUiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxMDQiIHI9IjgiIGZpbGw9IiNiNDUzMDkiIG9wYWNpdHk9IjAuNzUiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSIxNjgiIGN5PSIxMDYiIHI9IjYiIGZpbGw9IiNiNDUzMDkiIG9wYWNpdHk9IjAuNzUiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSIyMDUiIGN5PSIxMDMiIHI9IjEwIiBmaWxsPSIjYjQ1MzA5IiBvcGFjaXR5PSIwLjc1IiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMS42Ii8+PGNpcmNsZSBjeD0iMjI2IiBjeT0iMTA3IiByPSI3IiBmaWxsPSIjYjQ1MzA5IiBvcGFjaXR5PSIwLjc1IiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMS42Ii8+PGNpcmNsZSBjeD0iMjQ2IiBjeT0iMTA0IiByPSI4IiBmaWxsPSIjYjQ1MzA5IiBvcGFjaXR5PSIwLjc1IiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMS42Ii8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iOTYiIHI9IjUwIiBmaWxsPSIjZmZmZmZmIiBmaWxsLW9wYWNpdHk9IjAuNzUiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTMzNiAxMzIgTDM3MiAxNzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjxwYXRoIGQ9Ik0zMzYgMTMyIEwzNzIgMTcwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwZTc0OTAiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjxjaXJjbGUgY3g9IjI5MCIgY3k9IjkwIiByPSIxMyIgZmlsbD0iI2I0NTMwOSIgb3BhY2l0eT0iMC44IiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMS44Ii8+PGNpcmNsZSBjeD0iMzEyIiBjeT0iMTA0IiByPSI5IiBmaWxsPSIjYjQ1MzA5IiBvcGFjaXR5PSIwLjgiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIxLjgiLz48cmVjdCB4PSI0MCIgeT0iNDAiIHdpZHRoPSIxMDQiIGhlaWdodD0iMjQiIHJ4PSIxMiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMGU3NDkwIiBzdHJva2Utd2lkdGg9IjEuOCIgLz48dGV4dCB4PSI5Mi4wIiB5PSI1NiIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEuNSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzBlNzQ5MCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Um9vdCBjYXVzZTwvdGV4dD4KPC9zdmc+Cg==" alt="Magnifying glass over fouling on a membrane surface" />
             </div>
             <div class="project-content">
               <h3>Membrane Fouling for Water and Wastewater Treatment</h3>
               <p>Investigated fouling in hollow fiber nanomembranes and MBR (membrane bioreactor) for advanced water and
                 wastewater treatment.</p>
+              <div class="itil-lens" data-module="msf"><span class="lens-code">ITIL 4 · MSF</span><span class="lens-practices">Problem management: root cause analysis</span></div>
               <div class="project-tags">
                 <span>R&D</span>
                 <span>Hollow Fiber</span>
@@ -495,7 +577,7 @@
                 <span>MBR</span>
               </div>
               <div class="project-links">
-                <span class="link-btn">MSc Thesis</span>
+                <span class="link-btn">TUM and Wetsus Academy</span>
               </div>
             </div>
           </article>
@@ -503,19 +585,20 @@
           <!-- Project 6 -->
           <article class="project-card">
             <div class="project-image">
-              <img src="/portfolio/assets/vaccine_production-C5GfUcif.png" alt="Biotech Vaccine Production" />
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjM1IiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIzNSIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJGbGFzaywgcGlsb3QgdmVzc2VsIGFuZCBwbGFudCB0YW5rIHNob3dpbmcgYSB2YWxpZGF0ZWQgc2NhbGUtdXAiPgogIDwhLS0gT3JpZ2luYWwgaWxsdXN0cmF0aW9uIGZvciB0aGUgRmVhdHVyZWQgUHJvamVjdHMgY2FyZHMuIEZyZWUgdG8gdXNlLiAtLT4KICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJkb3RzIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIyIiBjeT0iMiIgcj0iMS4yIiBmaWxsPSIjYjQ1MzA5IiBvcGFjaXR5PSIwLjEyIi8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjM1IiBmaWxsPSIjZmZmYmViIi8+CiAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIyMzUiIGZpbGw9InVybCgjZG90cykiLz4KICA8Y2lyY2xlIGN4PSIzNDUiIGN5PSIzMCIgcj0iOTUiIGZpbGw9IiNmYmJmMjQiIG9wYWNpdHk9IjAuMTQiLz4KICA8Y2lyY2xlIGN4PSI0MCIgY3k9IjIyNSIgcj0iNzAiIGZpbGw9IiNmYmJmMjQiIG9wYWNpdHk9IjAuMTIiLz4KPHBhdGggZD0iTTY2IDEyMCBIODYgVjE0MCBMMTAyIDE3NiBRMTA0IDE4NCA5NiAxODQgSDU2IFE0OCAxODQgNTAgMTc2IEw2NiAxNDAgWiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTU2IDE2OCBIOTYgTDEwMCAxNzYgUTEwMiAxODIgOTYgMTgyIEg1NiBRNTAgMTgyIDUyIDE3NiBaIiBmaWxsPSIjZmJiZjI0IiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHJlY3QgeD0iMTUwIiB5PSI5OCIgd2lkdGg9IjY0IiBoZWlnaHQ9Ijg2IiByeD0iMTAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyLjIiIC8+PHJlY3QgeD0iMTY2IiB5PSI4NCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjE2IiByeD0iNCIgZmlsbD0iI2NiZDVlMSIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIgLz48cmVjdCB4PSIxNTIiIHk9IjE0MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQyIiByeD0iOCIgZmlsbD0iI2ZiYmYyNCIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjAiIC8+PHJlY3QgeD0iMjYyIiB5PSI1OCIgd2lkdGg9IjEwNCIgaGVpZ2h0PSIxMjYiIHJ4PSIxNiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMmIyYjM4IiBzdHJva2Utd2lkdGg9IjIuMiIgLz48cmVjdCB4PSIyNjQiIHk9IjExNiIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2NiIgcng9IjE0IiBmaWxsPSIjZmJiZjI0IiBzdHJva2U9IiMyYjJiMzgiIHN0cm9rZS13aWR0aD0iMCIgLz48cGF0aCBkPSJNMjc2IDcwIFYxMDIgTTI4OCA3MCBWOTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2UyZThmMCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHBhdGggZD0iTTExNCAxNTIgSDEzOCBNMTMyIDE0NiBMMTM5IDE1MiBMMTMyIDE1OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYjQ1MzA5IiBzdHJva2Utd2lkdGg9IjIuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjxwYXRoIGQ9Ik0yMjQgMTQyIEgyNTAgTTI0NCAxMzYgTDI1MSAxNDIgTDI0NCAxNDgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2I0NTMwOSIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48Y2lyY2xlIGN4PSIzNjAiIGN5PSI2MCIgcj0iMTUiIGZpbGw9IiMyMmM1NWUiIHN0cm9rZT0iIzJiMmIzOCIgc3Ryb2tlLXdpZHRoPSIyLjIiLz48cGF0aCBkPSJNMzUzLjcgNjAgTDM1OC41IDY0LjggTDM2Ni43NSA1NC43NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjx0ZXh0IHg9Ijc2IiB5PSIyMDgiIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYjQ1MzA5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5MYWI8L3RleHQ+PHRleHQgeD0iMTgyIiB5PSIyMDgiIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYjQ1MzA5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QaWxvdDwvdGV4dD48dGV4dCB4PSIzMTQiIHk9IjIwOCIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiNDUzMDkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBsYW50PC90ZXh0Pgo8L3N2Zz4K" alt="Flask, pilot vessel and plant tank showing a validated scale-up" />
             </div>
             <div class="project-content">
               <h3>Vaccine Production Scale-Up</h3>
               <p>Simulated economic and technical feasibility of large-scale vaccine production using SuperPro Designer.
               </p>
+              <div class="itil-lens" data-module="pic"><span class="lens-code">ITIL 4 · PIC</span><span class="lens-practices">Capacity and performance management, Service validation and testing</span></div>
               <div class="project-tags">
                 <span>Biotech</span>
                 <span>Simulation</span>
                 <span>Vaccines</span>
               </div>
               <div class="project-links">
-                <span class="link-btn">Instituto Butantan</span>
+                <span class="link-btn">Butantan Institute</span>
               </div>
             </div>
           </article>
@@ -523,19 +606,20 @@
           <!-- Project 7 -->
           <article class="project-card">
             <div class="project-image">
-              <img src="/portfolio/assets/industrial_gases-BBao5Vli.jpg" alt="Industrial Gases Support" />
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20235'%20width='400'%20height='235'%20role='img'%20aria-label='Industrial%20gas%20cylinders%20next%20to%20support%20chat%20bubbles'%3e%3c!--%20Original%20illustration%20for%20the%20Featured%20Projects%20cards.%20Free%20to%20use.%20--%3e%3cdefs%3e%3cpattern%20id='dots'%20width='16'%20height='16'%20patternUnits='userSpaceOnUse'%3e%3ccircle%20cx='2'%20cy='2'%20r='1.2'%20fill='%230e7490'%20opacity='0.12'/%3e%3c/pattern%3e%3c/defs%3e%3crect%20width='400'%20height='235'%20fill='%23ecfeff'/%3e%3crect%20width='400'%20height='235'%20fill='url(%23dots)'/%3e%3ccircle%20cx='345'%20cy='30'%20r='95'%20fill='%2322d3ee'%20opacity='0.14'/%3e%3ccircle%20cx='40'%20cy='225'%20r='70'%20fill='%2322d3ee'%20opacity='0.12'/%3e%3crect%20x='46'%20y='72'%20width='40'%20height='130'%20rx='18'%20fill='%23cbd5e1'%20stroke='%232b2b38'%20stroke-width='2.2'%20/%3e%3crect%20x='58'%20y='58'%20width='16'%20height='16'%20rx='4'%20fill='%23475569'%20stroke='%232b2b38'%20stroke-width='2.2'%20/%3e%3crect%20x='46'%20y='112'%20width='40'%20height='14'%20rx='0'%20fill='%23ffffff'%20stroke='%232b2b38'%20stroke-width='1.8'%20/%3e%3crect%20x='96'%20y='72'%20width='40'%20height='130'%20rx='18'%20fill='%2394a3b8'%20stroke='%232b2b38'%20stroke-width='2.2'%20/%3e%3crect%20x='108'%20y='58'%20width='16'%20height='16'%20rx='4'%20fill='%23475569'%20stroke='%232b2b38'%20stroke-width='2.2'%20/%3e%3crect%20x='96'%20y='112'%20width='40'%20height='14'%20rx='0'%20fill='%23ffffff'%20stroke='%232b2b38'%20stroke-width='1.8'%20/%3e%3crect%20x='146'%20y='72'%20width='40'%20height='130'%20rx='18'%20fill='%23cbd5e1'%20stroke='%232b2b38'%20stroke-width='2.2'%20/%3e%3crect%20x='158'%20y='58'%20width='16'%20height='16'%20rx='4'%20fill='%23475569'%20stroke='%232b2b38'%20stroke-width='2.2'%20/%3e%3crect%20x='146'%20y='112'%20width='40'%20height='14'%20rx='0'%20fill='%23ffffff'%20stroke='%232b2b38'%20stroke-width='1.8'%20/%3e%3cpath%20d='M226%2044%20H362%20Q372%2044%20372%2054%20V106%20Q372%20116%20362%20116%20H262%20L244%20132%20L248%20116%20H226%20Q216%20116%20216%20106%20V54%20Q216%2044%20226%2044%20Z'%20fill='%23ffffff'%20stroke='%232b2b38'%20stroke-width='2.2'%20stroke-linejoin='round'%20stroke-linecap='round'/%3e%3ccircle%20cx='270'%20cy='80'%20r='5'%20fill='%230e7490'/%3e%3ccircle%20cx='294'%20cy='80'%20r='5'%20fill='%230e7490'/%3e%3ccircle%20cx='318'%20cy='80'%20r='5'%20fill='%230e7490'/%3e%3cpath%20d='M250%20140%20H352%20Q362%20140%20362%20150%20V186%20Q362%20196%20352%20196%20H340%20L344%20210%20L326%20196%20H250%20Q240%20196%20240%20186%20V150%20Q240%20140%20250%20140%20Z'%20fill='%2322d3ee'%20stroke='%232b2b38'%20stroke-width='2.2'%20stroke-linejoin='round'%20stroke-linecap='round'/%3e%3ccircle%20cx='300'%20cy='168'%20r='14'%20fill='%2322c55e'%20stroke='%232b2b38'%20stroke-width='2.2'/%3e%3cpath%20d='M294.12%20168%20L298.6%20172.48%20L306.3%20163.1'%20fill='none'%20stroke='%23ffffff'%20stroke-width='2.6'%20stroke-linecap='round'%20stroke-linejoin='round'%20/%3e%3c/svg%3e" alt="Industrial gas cylinders next to support chat bubbles" />
             </div>
             <div class="project-content">
               <h3>Gases Industry Support</h3>
               <p>Provided technical support and project assistance for industrial gas clients and environmental
                 solutions.</p>
+              <div class="itil-lens" data-module="msf"><span class="lens-code">ITIL 4 · MSF</span><span class="lens-practices">Service desk, Relationship management</span></div>
               <div class="project-tags">
                 <span>Industrial Gases</span>
                 <span>Technical Sales</span>
                 <span>Optimization</span>
               </div>
               <div class="project-links">
-                <span class="link-btn">White Martins</span>
+                <span class="link-btn">Praxair Gases Industry</span>
               </div>
             </div>
           </article>
@@ -547,7 +631,7 @@
       <div class="container">
         <h2>Get In Touch</h2>
         <p class="contact-text">
-          I'm currently looking for new opportunities in Incident Management, Project Management, or Data Analytics.
+          I'm currently looking for new opportunities in IT Service Management.
         </p>
         <div class="contact-actions">
           <a href="mailto:rosiane.vitorcaetano@gmail.com" class="btn primary">Email Me</a>
