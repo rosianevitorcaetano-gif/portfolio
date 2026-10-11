@@ -4,6 +4,16 @@
   --border: rgba(15, 23, 42, 0.1);
   --text-primary: #0f172a;
   --text-secondary: #475569;
+  --text-muted: #64748b;
+  /* Type scale: every text on the page uses one of these sizes */
+  --fs-xs: 0.75rem;   /* labels, badges, chips */
+  --fs-sm: 0.875rem;  /* card text, details, tags */
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;  /* intro paragraphs */
+  --fs-h3: 1.2rem;    /* card titles */
+  --fs-sub: 1.5rem;   /* sub-section titles */
+  --fs-h2: 2.25rem;   /* section titles */
+  --fs-h1: 3.75rem;   /* name */
   --accent-color: #4f46e5;
   /* Indigo-600, readable on white */
   --accent-glow: rgba(79, 70, 229, 0.3);
@@ -38,8 +48,22 @@ body {
 h1,
 h2,
 h3 {
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+h1,
+h2 {
   font-weight: 800;
-  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* Emphasis inside paragraphs: dark and semi-bold, never extra bold */
+p strong {
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 a {
@@ -74,7 +98,7 @@ nav {
 
 .logo {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   background: linear-gradient(45deg, var(--text-primary), var(--accent-color));
   -webkit-background-clip: text;
   background-clip: text;
@@ -83,6 +107,8 @@ nav {
 
 .nav-links {
   display: flex;
+  font-size: var(--fs-base);
+  font-weight: 500;
   gap: clamp(1rem, 1.6vw, 2rem);
   list-style: none;
   white-space: nowrap;
@@ -91,7 +117,7 @@ nav {
 /* Seven links: smaller type and a shorter logo on medium screens */
 @media (max-width: 1250px) {
   .nav-links {
-    font-size: 0.9rem;
+    font-size: var(--fs-sm);
     gap: 1rem;
   }
 
@@ -194,13 +220,13 @@ nav {
 }
 
 .project-content h3 {
-  font-size: 1.5rem;
+  font-size: var(--fs-h3);
   margin-bottom: 0.8rem;
 }
 
 .project-content p {
   color: var(--text-secondary);
-  font-size: 1rem;
+  font-size: var(--fs-sm);
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -208,7 +234,7 @@ nav {
 .projects-intro {
   max-width: 760px;
   color: var(--text-secondary);
-  font-size: 1.05rem;
+  font-size: var(--fs-lg);
   margin: -0.5rem 0 1.5rem;
 }
 
@@ -225,16 +251,17 @@ nav {
 }
 
 .lens-code {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
   color: var(--mod-ink);
 }
 
 .lens-practices {
-  font-size: 0.88rem;
+  font-size: var(--fs-sm);
   color: var(--text-primary);
   line-height: 1.4;
+  font-weight: 500;
 }
 
 .project-tags {
@@ -245,11 +272,12 @@ nav {
 }
 
 .project-tags span {
-  font-size: 0.8rem;
+  font-size: var(--fs-xs);
   color: var(--accent-color);
   background: rgba(79, 70, 229, 0.08);
   padding: 0.3rem 0.8rem;
   border-radius: 50px;
+  font-weight: 500;
 }
 
 .project-links {
@@ -259,10 +287,13 @@ nav {
 
 .link-btn {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: var(--fs-xs);
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 
 .link-btn:hover {
@@ -287,7 +318,7 @@ nav {
   max-width: 600px;
   margin: 0 auto 3rem auto;
   color: var(--text-secondary);
-  font-size: 1.2rem;
+  font-size: var(--fs-lg);
 }
 
 .contact-actions {
@@ -306,6 +337,7 @@ nav {
   font-weight: 500;
   color: var(--text-secondary);
   position: relative;
+  font-size: var(--fs-sm);
 }
 
 .social-link::after {
@@ -325,6 +357,10 @@ nav {
 
 .social-link:hover::after {
   width: 100%;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
 }
 
 .nav-links a:hover {
@@ -358,7 +394,7 @@ main {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: var(--fs-h1);
   margin-bottom: 1rem;
   background: linear-gradient(to right, #0f172a 0%, #4f46e5 100%);
   -webkit-background-clip: text;
@@ -368,7 +404,7 @@ main {
 
 /* Titles: two rows on wide screens, one title per line on phones */
 .hero-titles {
-  font-size: 1.2rem;
+  font-size: var(--fs-lg);
   font-weight: 600;
   line-height: 1.6;
   color: var(--text-primary);
@@ -386,7 +422,7 @@ main {
 
 .hero-about p {
   color: var(--text-secondary);
-  font-size: 1.05rem;
+  font-size: var(--fs-lg);
   line-height: 1.75;
   margin-bottom: 1rem;
 }
@@ -396,7 +432,7 @@ main {
 }
 
 .hero .skills-container h3 {
-  font-size: 0.85rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -409,7 +445,7 @@ main {
 }
 
 .hero .skill-tag {
-  font-size: 0.82rem;
+  font-size: var(--fs-sm);
   padding: 0.35rem 0.85rem;
 }
 
@@ -426,6 +462,7 @@ main {
   white-space: nowrap;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  font-size: var(--fs-base);
 }
 
 .btn:active {
@@ -574,9 +611,10 @@ main {
   border: 1px solid var(--border);
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: var(--fs-sm);
   color: var(--text-secondary);
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .skill-tag:hover {
@@ -671,7 +709,6 @@ main {
 }
 
 .htl-certs .htl-org {
-  font-style: normal;
   margin-bottom: 0;
 }
 
@@ -735,28 +772,28 @@ main {
 
 .htl-date {
   display: block;
-  font-size: 0.85rem;
+  font-size: var(--fs-sm);
   font-weight: 600;
   color: var(--accent-color);
   margin-bottom: 0.45rem;
 }
 
 .htl-card h3 {
-  font-size: 1.1rem;
+  font-size: var(--fs-h3);
   line-height: 1.25;
   margin-bottom: 0.3rem;
 }
 
 .htl-org {
   display: block;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
   margin-bottom: 0.7rem;
+  font-weight: 500;
 }
 
 .htl-card p {
-  font-size: 0.92rem;
+  font-size: var(--fs-sm);
   color: var(--text-secondary);
   line-height: 1.55;
 }
@@ -780,12 +817,12 @@ main {
 
 /* One size for every section title */
 .section h2 {
-  font-size: 2.5rem;
+  font-size: var(--fs-h2);
   margin-bottom: 1.5rem;
 }
 
 @media (max-width: 768px) {
   .section h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }

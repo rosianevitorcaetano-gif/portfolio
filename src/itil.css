@@ -44,21 +44,21 @@
   display: block;
   color: var(--accent-color);
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.8rem;
 }
 
 .itil-section h2 {
-  font-size: 2.5rem;
+  font-size: var(--fs-h2);
   margin-bottom: 1.5rem;
 }
 
 .itil-intro {
   max-width: 760px;
   color: var(--text-secondary);
-  font-size: 1.1rem;
+  font-size: var(--fs-lg);
   line-height: 1.8;
   margin-bottom: 2.5rem;
 }
@@ -79,7 +79,7 @@
   border-radius: 50px;
   background: var(--surface);
   border: 1px solid var(--border);
-  font-size: 0.88rem;
+  font-size: var(--fs-sm);
   font-weight: 600;
 }
 
@@ -92,8 +92,8 @@
 
 .cert > span {
   color: var(--text-secondary);
-  font-weight: 400;
-  font-size: 0.85rem;
+  font-weight: 500;
+  font-size: var(--fs-sm);
 }
 
 .cert-award {
@@ -109,13 +109,13 @@
 
 .cert-op {
   color: var(--text-secondary);
-  font-size: 1.2rem;
+  font-size: var(--fs-lg);
   font-weight: 600;
 }
 
 .cert-caption {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   margin: 0.9rem 0 2rem;
 }
 
@@ -127,7 +127,7 @@
   gap: 0.6rem 1.75rem;
   margin-bottom: 2rem;
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: var(--fs-sm);
 }
 
 .itil-legend li {
@@ -140,7 +140,7 @@
   display: inline-block;
   padding: 0.15rem 0.6rem;
   border-radius: 50px;
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   white-space: nowrap;
 }
@@ -159,7 +159,7 @@
 .chip-sample {
   padding: 0.15rem 0.6rem;
   border-radius: 50px;
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   background: #334155;
   color: #ffffff;
@@ -225,14 +225,14 @@
 }
 
 .stage-num {
-  font-size: 1.6rem;
-  font-weight: 800;
+  font-size: var(--fs-sub);
+  font-weight: 700;
   color: var(--mod-ink);
   line-height: 1;
 }
 
 .stage-code {
-  font-size: 0.75rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.08em;
   color: var(--mod-ink);
@@ -247,21 +247,21 @@
 
 .stage-role {
   color: var(--mod-ink);
-  font-size: 0.8rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.35rem;
 }
 
 .stage h3 {
-  font-size: 1.25rem;
+  font-size: var(--fs-h3);
   margin-bottom: 0.7rem;
 }
 
 .stage-lead {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -275,12 +275,13 @@
 }
 
 .chips li {
-  font-size: 0.78rem;
+  font-size: var(--fs-xs);
   line-height: 1.3;
   color: var(--mod-ink);
   background: var(--mod-soft);
   padding: 0.3rem 0.65rem;
   border-radius: 50px;
+  font-weight: 500;
 }
 
 .chips li.chip-owned {
@@ -298,7 +299,7 @@
   list-style: none;
   color: var(--text-primary);
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: var(--fs-sm);
   display: flex;
   align-items: center;
   gap: 0.45rem;
@@ -335,7 +336,7 @@
 .stage-applied ul {
   margin: 0.75rem 0 0 1rem;
   color: var(--text-secondary);
-  font-size: 0.88rem;
+  font-size: var(--fs-sm);
   line-height: 1.55;
 }
 
@@ -351,7 +352,7 @@
   margin-top: auto;
   padding-top: 0.9rem;
   border-top: 1px solid var(--card-border);
-  font-size: 0.85rem;
+  font-size: var(--fs-sm);
   color: var(--text-secondary);
 }
 
@@ -396,7 +397,7 @@
   margin: 1.25rem 0 3.5rem;
   text-align: center;
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
 }
 
 .loop-icon {
@@ -478,13 +479,13 @@
 }
 
 .journey-head h3 {
-  font-size: 1.5rem;
+  font-size: var(--fs-sub);
   margin-bottom: 0.5rem;
 }
 
 .journey-head p {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   max-width: 620px;
 }
 
@@ -495,7 +496,7 @@
 
 .journey-controls .btn {
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   padding: 0.65rem 1.5rem;
   white-space: nowrap;
 }
@@ -554,19 +555,19 @@
 }
 
 .jstep-num {
-  font-size: 0.8rem;
-  font-weight: 800;
+  font-size: var(--fs-xs);
+  font-weight: 700;
   color: var(--mod-ink);
 }
 
 .jstep-practice {
-  font-size: 0.9rem;
+  font-size: var(--fs-sm);
   font-weight: 600;
   line-height: 1.3;
 }
 
 .jstep-text {
-  font-size: 0.85rem;
+  font-size: var(--fs-sm);
   color: var(--text-secondary);
   line-height: 1.45;
 }
@@ -584,7 +585,7 @@
 .journey-status {
   min-height: 1.5rem;
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: var(--fs-sm);
   color: var(--text-secondary);
 }
 
@@ -601,7 +602,7 @@
 
 @media (max-width: 768px) {
   .itil-section h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .journey {
