@@ -270,6 +270,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   gap: 0.4rem;
   margin-bottom: 1rem;
 }
@@ -413,9 +414,34 @@
 }
 
 @media (min-width: 1280px) {
+  /* Seven shared rows (head, role, title, lead, chips, "Where I applied it", next step), so
+     each part of every card starts at the same height, whatever the length of the text above.
+     Each card spans all seven rows and inherits them through subgrid. */
   .itil-flow {
     grid-template-columns: minmax(0, 1fr) 44px minmax(0, 1fr) 44px minmax(0, 1fr) 44px minmax(0, 1fr);
+    grid-template-rows: repeat(7, auto);
     align-items: stretch;
+  }
+
+  .itil-flow > .stage {
+    grid-row: 1 / span 7;
+    display: grid;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+  }
+
+  .itil-flow > .flow-arrow {
+    grid-row: 1 / span 7;
+  }
+
+  /* Keep the tags at their natural size, and start the closing line at the top of its row
+     so the dividing lines sit at the same height in all four cards. */
+  .itil-flow > .stage > .chips {
+    align-self: start;
+  }
+
+  .itil-flow > .stage > .stage-next {
+    margin-top: 0;
   }
 
   .flow-arrow {
